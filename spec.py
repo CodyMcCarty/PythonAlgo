@@ -1,8 +1,6 @@
 import unittest
 from solutions import Solution
 
-# run test with: py -m unittest spec.Validate
-
 class Validate(unittest.TestCase):
     """
     Tests solutions
@@ -29,7 +27,7 @@ class Validate(unittest.TestCase):
         self.assertEqual(s.testing123(["a", "b", "c"]), ["1: a", "2: b", "3: c"])
     
 
-    if __name__ == '__main__':
-        unittest.main()
+if __name__ == '__main__':
+    unittest.main()
 
 
