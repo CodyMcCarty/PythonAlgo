@@ -6,6 +6,15 @@ class Validate(unittest.TestCase):
     Tests solutions
     """
 
+    def test_growth_of_a_population(self):
+        """
+        When ...
+        """
+        s = Solution()
+        self.assertEqual(s.nb_year(1500, 5, 100, 5000), 15)
+        self.assertEqual(s.nb_year(1500000, 2.5, 10000, 2000000), 10)
+        self.assertEqual(s.nb_year(1500000, 0.25, 1000, 2000000), 94)
+
     def test_convert_number_to_reversed_array(self):
         """
         When you pass a number, the correct array is returned
